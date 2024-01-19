@@ -9,138 +9,141 @@
 </head>
 <body>
     <div>
-        <header class="bg-black h-16 flex">
-            <div class="flex flex-row m-0 p-0 gap-3 justify-center items-center mx-3">
-                <img src="assets/icon.svg" alt="" class="h-8 w-8 m-0 p-0">
-                <a href="#" class="text-white m-0 p-0 font-poppins text-lg">Abstract</a>
-                <a href="#" class="text-white font-poppins text-lg before:content-['|'] border-white before:mx-[5px]">Help Center</a>
+        <header class="bg-black h-16 flex md:h-20">
+            <div class="flex flex-row m-0 p-0 gap-3 justify-center items-center mx-3 md:mx-9">
+                <img src="assets/icon.svg" alt="" class="h-8 w-8 m-0 p-0 md:h-10 md:w-12">
+                <a href="#" class="text-white m-0 p-0 font-poppins text-lg md:text-2xl">Abstract</a>
+                <a href="#" class="text-white font-poppins text-lg before:content-['|'] border-white before:mx-[5px] md:text-2xl">Help Center</a>
             </div>
-            <div class="flex gap-3 place-content-end">
+            <div class="flex gap-3 place-content-end md:hidden">
                 <button class="text-white"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <button class="text-white"><i class="fa-solid fa-bars"></i></button>
             </div>
+            <div class="m-0 p-0 flex items-center mx-5 gap-3 max-[650px]:hidden">
+                <button class="text-white text-lg font-poppins font-medium border-white border-2 py-2 px-2 rounded-md">Submit a request</button>
+                <button class="text-white text-lg font-poppins font-medium border-white border-2 py-2 px-2 rounded-md bg-[#4c5fd5]">Sign in</button>
+            </div>
         </header>
 
-        <div class="bg-[#dadbf1] h-60 flex flex-col justify-center items-center gap-5">
-            <h1 class="text-5xl font-medium mx-3">How can we help?</h1>
-            <input type="search" name="" id="" placeholder="Search" class="placeholder:px-2 rounded-md text-2xl py-3 border-2 border-black mx-3">
+        <div class="bg-[#dadbf1] h-60 flex flex-col justify-center items-center gap-5 md:h-70">
+            <h1 class="text-5xl font-medium mx-3 md:text-7xl md:mx-9">How can we help?</h1>
+            <input type="search" name="" id="" placeholder="Search" class="placeholder:px-2 rounded-md text-2xl py-3 border-2 border-black mx-3 md:mx-9 md:py-3 px-12 md:placeholder:p-0">
         </div>
 
-        <div class="my-10">
-            <div class="flex mx-3 mb-16">
-                <div class="flex flex-col h-11 w-24">
-                    <img src="assets/asset 0.png" alt="">
+        <div class="flex flex-wrap justify-between mx-3 my-5 max-w-[90%]">
+            <div class="flex flex-row gap-2 mb-6 justify-evenly">
+                <div>
+                    <img class="flex flex-col w-24 h-auto" src="assets/asset 0.png" alt="">
                 </div>
-                <div class="flex flex-col justify-center ml-3">
-                    <h2 class="text-2xl font-medium font-poppins">Using Abstrat</h2>
-                    <p class="text-base font-normal font-poppins text-gray-700">Abstract lets you manage, version, and document your designs in one place.</p>
-                    <a href="#" class="text-blue-600 font-normal text-lg">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="flex mx-3 mb-16">
-                <div class="flex flex-col h-11 w-24">
-                    <img src="assets/asset 1.png" alt="">
-                </div>
-                <div class="flex flex-col justify-center ml-3">
-                    <h2 class="text-2xl font-medium font-poppins">Manage your account</h2>
-                    <p class="text-base font-normal font-poppins text-gray-700">Configure your account settings, such as your email, profile details, and password.</p>
-                    <a href="#" class="text-blue-600 font-normal text-lg">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="flex mx-3 mb-16">
-                <div class="flex flex-col h-11 w-24">
-                    <img src="assets/asset 2.png" alt="">
-                </div>
-                <div class="flex flex-col justify-center ml-3">
-                    <h2 class="text-2xl font-medium font-poppins">Manage organizations, teams, and projects</h2>
-                    <p class="text-base font-normal font-poppins text-gray-700">Use Abstract organizations, teams, and projects to organize your people and your work.</p>
-                    <a href="#" class="text-blue-600 font-normal text-lg">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <div>
+                    <h2 class="text-black font-poppins font-medium text-xl">Using Abstract</h2>
+                    <p class="text-gray-700 font-poppins text-base">Abstract lets you manage, version, and document your designs in one place.</p>
+                    <a class="text-blue-700 font-poppins font-normal hover:underline" href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
             
-            <div class="flex mx-3 mb-16">
-                <div class="flex flex-col h-11 w-24">
-                    <img src="assets/asset 3.png" alt="">
+            <div class="flex flex-row gap-2 mb-6 justify-evenly">
+                <div>
+                    <img class="flex flex-col w-24 h-auto" src="assets/asset 1.png" alt="">
                 </div>
-                <div class="flex flex-col justify-center ml-3">
-                    <h2 class="text-2xl font-medium font-poppins">Manage billing</h2>
-                    <p class="text-base font-normal font-poppins text-gray-700">Change subscriptions and payment details.</p>
-                    <a href="#" class="text-blue-600 font-normal text-lg">Learn More<i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="flex mx-3 mb-16">
-                <div class="flex flex-col h-11 w-24">
-                    <img src="assets/asset 4.png" alt="">
-                </div>
-                <div class="flex flex-col justify-center ml-3">
-                    <h2 class="text-2xl font-medium font-poppins">Authenticate to Abstract</h2>
-                    <p class="text-base font-normal font-poppins text-gray-700">Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
-                    <a href="#" class="text-blue-600 font-normal text-lg">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <div>
+                    <h2 class="text-black font-poppins font-medium text-xl">Manage your account</h2>
+                    <p class="text-gray-700 font-poppins text-base">Configure your account settings, such as your email, profile details, and password.</p>
+                    <a class="text-blue-700 font-poppins font-normal hover:underline" href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
-
-            <div class="flex mx-3 mb-16">
-                <div class="flex flex-col h-11 w-20">
-                    <img src="assets/asset 5.png" alt="">
+            
+            <div class="flex flex-row gap-2 mb-6 justify-evenly">
+                <div>
+                    <img class="flex flex-col w-24 h-auto" src="assets/asset 2.png" alt="">
                 </div>
-                <div class="flex flex-col justify-center ml-3">
-                    <h2 class="text-2xl font-medium font-poppins">Abstract support</h2>
-                    <p class="text-base font-normal font-poppins text-gray-700">Get in touch with a human.</p>
-                    <a href="#" class="text-blue-600 font-normal text-lg">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <div>
+                    <h2 class="text-black font-poppins font-medium text-xl">Manage organizations, teams, and projects</h2>
+                    <p class="text-gray-700 font-poppins text-base">Use Abstract organizations, teams, and projects to organize your people and your work.</p>
+                    <a class="text-blue-700 font-poppins font-normal hover:underline" href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
-
-
+            
+            <div class="flex flex-row gap-2 mb-6 justify-evenly">
+                <div>
+                    <img class="flex flex-col w-16 h-auto" src="assets/asset 3.png" alt="">
+                </div>
+                <div>
+                    <h2 class="text-black font-poppins font-medium text-xl">Manage billing</h2>
+                    <p class="text-gray-700 font-poppins text-base">Change subscriptions and payment details.</p>
+                    <a class="text-blue-700 font-poppins font-normal hover:underline" href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="flex flex-row gap-2 mb-6 justify-evenly">
+                <div>
+                    <img class="flex flex-col w-24 h-auto" src="assets/asset 4.png" alt="">
+                </div>
+                <div>
+                    <h2 class="text-black font-poppins font-medium text-xl">Authenticate to Abstract</h2>
+                    <p class="text-gray-700 font-poppins text-lg">Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
+                    <a class="text-blue-700 font-poppins font-normal hover:underline" href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="flex flex-row gap-2 mb-6 justify-evenly">
+                <div>
+                    <img class="flex flex-col w-16 h-auto" src="assets/asset 5.png" alt="">
+                </div>
+                <div>
+                    <h2 class="text-black font-poppins font-medium text-xl">Abstract support</h2>
+                    <p class="text-gray-700 font-poppins text-base">Get in touch with a human.</p>
+                    <a class="text-blue-700 font-poppins font-normal hover:underline" href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
         </div>
 
         <footer class="bg-black h-auto">
-            <div class="mx-3 flex flex-row gap-24">
-                <div class="flex flex-col py-5 flex-wrap max-[100px]:">
-                    <h2 class="text-white text-2xl font-medium font-poppins">Abstract</h2>
-                    <a href="#" class="text-white font-poppins font-normal text-base mt-3">Start Trial</a>
-                    <a href="#" class="text-white font-poppins font-normal text-base">Pricing</a>
-                    <a href="#" class="text-white font-poppins font-normal text-base">Download</a>
+            <div class="mx-5 flex flex-wrap">
+                <div class="flex flex-col py-6 w-[47%]">
+                    <h2 class="text-white font-poppins font-medium text-2xl mb-2">Abstract</h2>
+                    <a class="text-white font-poppins font-normal hover:underline" href="#">Start trial</a>
+                    <a class="text-white font-poppins font-normal hover:underline" href="#">Pricing</a>
+                    <a class="text-white font-poppins font-normal hover:underline" href="#">Download</a>
                 </div>
 
-                <div class="flex flex-col py-5">
-                    <h2 class="text-white text-2xl font-medium font-poppins">Resources</h2>
-                    <a href="#" class="text-white font-poppins font-normal text-base mt-3">Blog</a>
-                    <a href="#" class="text-white font-poppins font-normal text-base">Help Center</a>
-                    <a href="#" class="text-white font-poppins font-normal text-base">Release Notes</a>
-                    <a href="#" class="text-white font-poppins font-normal text-base">Status</a>
-                </div>
-            </div>
-
-            <div class="mx-3 flex flex-row gap-24">
-                <div class="flex flex-col py-5 flex-wrap max-[100px]:">
-                    <h2 class="text-white text-2xl font-medium font-poppins">Community</h2>
-                    <a href="#" class="text-white font-poppins font-normal text-base mt-3">Twitter</a>
-                    <a href="#" class="text-white font-poppins font-normal text-base">LinkedIn</a>
-                    <a href="#" class="text-white font-poppins font-normal text-base">Facebook</a>
-                    <a href="#" class="text-white font-poppins font-normal text-base">Dribble</a>
-                    <a href="#" class="text-white font-poppins font-normal text-base">Podcast</a>
+                <div class="flex flex-col py-6">
+                    <h2 class="text-white font-poppins font-medium text-2xl mb-2">Resources</h2>
+                    <a class="text-white font-poppins font-normal hover:underline" href="#">Blog</a>
+                    <a class="text-white font-poppins font-normal hover:underline" href="#">Help Center</a>
+                    <a class="text-white font-poppins font-normal hover:underline" href="#">Release Notes</a>
+                    <a class="text-white font-poppins font-normal hover:underline" href="#">Status</a>
                 </div>
 
-                <div class="flex flex-col py-5">
-                    <h2 class="text-white text-2xl font-medium font-poppins">Company</h2>
-                    <a href="#" class="text-white font-poppins font-normal text-base mt-3">About Us</a>
-                    <a href="#" class="text-white font-poppins font-normal text-base">Career</a>
-                    <a href="#" class="text-white font-poppins font-normal text-base">Legal</a>
-                    <div class="mt-3">
-                        <h2 class="text-white text-2xl font-medium font-poppins">Contact Us</h2>
-                        <a href="mailto:info@abstract.com" class="text-white font-poppins font-normal text-base">info@abstract.com</a>
+                <div class="flex flex-col py-6 w-[47%]">
+                    <h2 class="text-white font-poppins font-medium text-2xl mb-2">Community</h2>
+                    <a class="text-white font-poppins font-normal hover:underline" href="#">Twitter</a>
+                    <a class="text-white font-poppins font-normal hover:underline" href="#">LinkedIn</a>
+                    <a class="text-white font-poppins font-normal hover:underline" href="#">Facebook</a>
+                    <a class="text-white font-poppins font-normal hover:underline" href="#">Dribbe</a>
+                    <a class="text-white font-poppins font-normal hover:underline" href="#">Podcast</a>
+                </div>
+
+
+                <div class="flex flex-col py-6">
+                    <h2 class="text-white font-poppins font-medium text-2xl mb-2">Company</h2>
+                    <a class="text-white font-poppins font-normal hover:underline" href="#">About Us</a>
+                    <a class="text-white font-poppins font-normal hover:underline" href="#">Careers</a>
+                    <a class="text-white font-poppins font-normal hover:underline" href="#">Legal</a>
+                    <div class="mt-4 flex flex-col">
+                        <strong class="text-white font-poppins font-medium text-2xl">Contact Us</strong>
+                        <a class="text-white font-poppins font-normal hover:underline" href="mailto:info@abstract.com">info@abstract.com</a>
                     </div>
+                
+                <div class="flex flex-col py-6 justify-between">
+                    <img class="my-3" src="assets/icon.svg" alt="">
+                    <p class="text-white font-poppins text-lg"><i class="fa-regular fa-copyright"></i> Copyright 2024</p>
+                    <p class="text-white font-poppins text-lg">Abstract Studio Design, Inc.</p>
+                    <p class="text-white font-poppins text-lg">All rights reserved</p>
                 </div>
-            </div>
+                </div>
 
-            <div class="mx-3 py-5 flex flex-col gap-3">
-                <img src="assets/icon.svg" alt="" class="w-36 h-15">
-                <p class="text-white font-poppins font-normal"><i class="fa-regular fa-copyright"></i> Copyright 2024</p>
-                <p class="text-white font-poppins font-normal">Abstract Studio Design, Inc.</p>
-                <p class="text-white font-poppins font-normal">All rights reserved</p>
             </div>
         </footer>
     </div>
